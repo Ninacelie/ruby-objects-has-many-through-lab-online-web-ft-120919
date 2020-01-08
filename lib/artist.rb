@@ -24,6 +24,14 @@ class Artist
         self.songs.last 
     end
 
+    def genres
+      Song.all.map do |song|
+        song.genre
+      end
+    end
+
+    
+
 
 
 
